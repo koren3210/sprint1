@@ -1,0 +1,78 @@
+body {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(88, 88, 88);
+}
+
+table {
+  table-layout: fixed;
+  margin-left: auto;
+  margin-bottom: 50%;
+  margin-right: auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+table td {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.5s;
+  border: 2px solid #bbb;
+  background-color: rgb(228, 243, 255);
+}
+
+table td p {
+  color: rgb(16, 0, 107);
+  font-size: 13px;
+  font-variant-numeric: diagonal-fractions;
+  font-weight: bold;
+}
+
+td:hover {
+  cursor: pointer;
+  background-color: rgb(174, 255, 214);
+}
+
+/* .board-container {
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 500px;
+  width: 450px;
+  overflow: hidden;
+  white-space: nowrap;
+} */
+
+.marked {
+  background-color: bisque;
+}
+
+.pressed {
+  background-color: rgb(143, 166, 185);
+}
+.bombed {
+  transition: 3;
+  background-color: rgb(255, 126, 126);
+}
+.level {
+  margin-bottom: 10%;
+  font-size: 18px;
+  color: aquamarine;
+}
+.emoji {
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 40px;
+}
+
+#display {
+  width: 100%;
+  font-size: 72px;
+  text-align: center;
+  margin: 0px auto;
+  background-color: #bbb;
+}

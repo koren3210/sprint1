@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>mine-sweepers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="initGame()">
+
+  <h1>💣mine-sweepers💣</h1>
+
+  <div class="level">
+    <label>
+      <input type="radio" data-level="easy" onclick="initGame(4)" name="radio"> Easy(4x4)
+      <input type="radio" data-level="hard" onclick="initGame(8)" name="radio"> Hard(8x8)
+      <input type="radio" data-level="extreme" onclick="initGame(12)" name="radio"> Extreme(12x12)
+    </label>
+  </div>
+  <div id="display">
+    00:00:00
+  </div>
+  <div class="emoji">😎</div>
+
+  <div class="board-container"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/util.js"></script>
+</body>
+
+</html>
